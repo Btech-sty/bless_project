@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
-import React from 'react';
+//import React from 'react';
 import Contact from './contact';
 import Home from './home';
 import About from './about';
 function Land() {
     return(
 
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
         <nav className="navbar bg-primary p-3 text-white justify-content-center fs-2">Buy Your Hair Here</nav>
            <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
